@@ -1,4 +1,5 @@
 # computer-graphics-final-image-competition
+![](image.gif)
 
 Two scenes were created building off of the ray tracing assignment and raster images assignment. The scenes were combined into one GIF (image.gif in this repository) created using GIMP. The theme of the scene is a a shooting of a tourist advertisement for the city of Seattle. The various STL models were positioned in the scenes using Blender. The models were chosen to be references to things that the city of Seattle is known for. Amazon (and Danbo, the unofficial Amazon mascot) represents the city's tech industry. The Space Needle is iconic in the city's skyline. A cup of Starbucks coffee as one of Seattle's well-known exports.
 
@@ -12,13 +13,12 @@ The second component scene is an imagining of post-production adding backgrounds
 Requires C++ and CMake.
 * Clone repository.
 * Inside repository folder, use the following commands:
-> mkdir build-release
 
-> cd build-release
+> mkdir build-release  
+> cd build-release  
+> cmake ../ -DCMAKE_BUILD_TYPE=Release  
+> make 
 
-> cmake ../ -DCMAKE_BUILD_TYPE=Release
-
-> make
 * To generate untextured_seattle.ppm, use the following command inside build-release.
 > ./raytracing
 * To generate textured_seattle.ppm, use the following command inside build-release.
