@@ -8,6 +8,21 @@ The first component scene is an imagining of a filming set, with spot lights, an
 ## textured_seattle.ppm
 The second component scene is an imagining of post-production adding backgrounds onto the green screens. This is done by mapping textures onto the green screen planes. The wall background is an image of Seattle's skyline including Mt. Rainier. The floor background is a wood texture meant to represent a stage.
 
+## Usage
+Requires C++ and CMake.
+* Clone repository.
+* Inside repository folder, use the following commands:
+>mkdir build-release
+>cd build-release
+>cmake ../ -DCMAKE_BUILD_TYPE=Release
+>make
+* To generate untextured_seattle.ppm, use the following command inside build-release.
+>./raytracing
+* To generate textured_seattle.ppm, use the following command inside build-release.
+>./raytracing texture
+
+Note that untextured_seattle.ppm will take a long amount of time to render. On an i5-6600K (4.5 GHz), this took about 57 minutes to render. On the other hand, textured_seattle.ppm will take about 6-7 minutes to render.
+
 ## Assets
 ### Models
 Models are found inside shared/data folder.
