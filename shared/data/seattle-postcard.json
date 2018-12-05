@@ -1,0 +1,151 @@
+{
+  "camera": {
+    "type": "perspective",
+    "focal_length": 1,
+    "eye": [0,1,6],
+    "up": [0,1,0],
+    "look": [0,0,-1],
+    "height": 1,
+    "width": 1.7777777778
+  },
+
+  "lights":[
+    { 
+      "type": "directional",
+      "direction": [0,0,-1],
+      "color": [0.9,0.9,0.9]
+    },
+    { 
+      "type": "directional",
+      "direction": [0,-1,0],
+      "color": [0.9,0.9,0.9]
+    }
+
+  ],
+   "materials": [
+    {
+      "name": "matte gray",
+      "ka": [0.09, 0.09, 0.09],
+      "kd": [0.95, 0.95, 0.95],
+      "ks": [0.3,0.3,0.3],
+      "km": [0.05,0.05,0.05],
+      "phong_exponent": 200
+    },
+    {
+      "name": "space needle gray",
+      "ka": [0.0255686,0.054118,0.0771569],
+      "kd": [0.02,0.02,0.02],
+      "ks": [0.2,0.2,0.2],
+      "km": [0.0,0.0,0.0],
+      "phong_exponent": 50
+    },
+    {
+      "name": "green screen",
+      "ka": [0.0301961,0.0686275,0.0290196],
+      "kd": [0.301961,0.686275,0.290196],
+      "ks": [0.2,0.2,0.2],
+      "km": [0.01,0.01,0.01],
+      "phong_exponent": 500
+    },
+    {
+      "name": "starbucks green",
+      "ka": [0,0.4392,0.2588],
+      "kd": [0,0.4392,0.2588],
+      "ks": [0.2,0.2,0.2],
+      "km": [0.01,0.01,0.01],
+      "phong_exponent": 500
+    },
+    {
+      "name": "orange plastic",
+      "ka": [0.1, 0.07, 0.02],
+      "kd": [1.0, 0.7, 0.2],
+      "ks": [0.8,0.8,0.8],
+      "km": [0.05,0.05,0.05],
+      "phong_exponent": 1000
+    },
+    {
+      "name": "danbo brown",
+      "ka": [0.1,0.08,0.25],
+      "kd": [1.0,0.8,0.25],
+      "ks": [0.8,0.8,0.8],
+      "km": [0.1,0.1,0.1],
+      "phong_exponent": 100
+    },
+    {
+      "name": "spot lights black",
+      "ka": [0.0215686,0.0494118,0.0721569],
+      "kd": [0.01,0.01,0.01],
+      "ks": [0.2,0.2,0.2],
+      "km": [0.0,0.0,0.0],
+      "phong_exponent": 1
+    },
+    {
+      "name": "chair black",
+      "ka": [0.0215686,0.0494118,0.0721569],
+      "kd": [0.01,0.01,0.01],
+      "ks": [0.2,0.2,0.2],
+      "km": [0.0,0.0,0.0],
+      "phong_exponent": 10
+    },
+    {
+      "name": "camera black",
+      "ka": [0.0215686,0.0494118,0.0721569],
+      "kd": [0.01,0.01,0.01],
+      "ks": [0.2,0.2,0.2],
+      "km": [0.0,0.0,0.0],
+      "phong_exponent": 10
+    },
+    {
+      "name": "stage shadow",
+      "ka": [0.0215686,0.0494118,0.0721569],
+      "kd": [0.1,0.1,0.1],
+      "ks": [0.2,0.2,0.2],
+      "km": [0.0,0.0,0.0],
+      "phong_exponent": 100
+    }
+  ],
+   "objects": [
+    {
+      "type": "soup",
+      "material": "danbo brown",
+      "stl": "danbo.stl"
+    },
+    {
+      "type": "soup",
+      "material": "matte gray",
+      "stl": "cup.stl"
+    },
+    {
+      "type": "soup",
+      "material": "starbucks green",
+      "stl": "starbucks.stl"
+    },
+    {
+      "type": "soup",
+      "material": "stage shadow",
+      "stl": "amazon_a.stl"
+    },
+    {
+      "type": "soup",
+      "material": "orange plastic",
+      "stl": "amazon_swoosh.stl"
+    },
+    {
+      "type": "soup",
+      "material": "space needle gray",
+      "stl": "space_needle.stl"
+    },
+    {
+      "type": "plane",
+      "material": "stage shadow",
+      "point": [9,0,0],
+      "normal": [1,0,0]
+    },
+    {
+      "type": "plane",
+      "material": "stage shadow",
+      "point": [-9,0,0],
+      "normal": [-1,0,0]
+    }
+  ]
+}

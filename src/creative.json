@@ -1,0 +1,181 @@
+{
+  "camera": {
+    "type": "perspective",
+    "focal_length": 1,
+    "eye": [0,0,4],
+    "up": [0,1,0],
+    "look": [0,0,-1],
+    "height": 1,
+    "width": 1.7777777778
+  },
+
+  "lights":[
+    {
+      "type": "point",
+      "position": [-10,20,10],
+      "color": [0.8,0.8,0.8]
+    }
+  ],
+
+  "materials": [
+    {
+      "name": "matte gray",
+      "ka": [0.09, 0.09, 0.09],
+      "kd": [0.95, 0.95, 0.95],
+      "ks": [0.3,0.3,0.3],
+      "km": [0.05,0.05,0.05],
+      "phong_exponent": 200
+    },
+    {
+      "name": "blue metal",
+      "ka": [0.0215686,0.0494118,0.0721569],
+      "kd": [0.215686,0.494118,0.721569],
+      "ks": [0.2,0.2,0.2],
+      "km": [0.1,0.1,0.1],
+      "phong_exponent": 500
+    },
+    {
+      "name": "green grass",
+      "ka": [0.0301961,0.0686275,0.0290196],
+      "kd": [0.301961,0.686275,0.290196],
+      "ks": [0.2,0.2,0.2],
+      "km": [0.01,0.01,0.01],
+      "phong_exponent": 500
+    },
+    {
+      "name": "dark green metal",
+      "ka": [0.0301961,0.0716275,0.0290196],
+      "kd": [0.301961,0.716275,0.290196],
+      "ks": [0.2,0.2,0.2],
+      "km": [0.1,0.1,0.1],
+      "phong_exponent": 500
+    },
+    {
+      "name": "Lambertian gray",
+      "ka": [0.02, 0.02, 0.02],
+      "kd": [0.8, 0.8, 0.8],
+      "ks": [0.1,0.1,0.1],
+      "km": [0.1,0.1,0.1],
+      "phong_exponent": 20
+    },
+    {
+      "name": "orange plastic",
+      "ka": [0.1, 0.07, 0.02],
+      "kd": [1.0, 0.7, 0.2],
+      "ks": [0.8,0.8,0.8],
+      "km": [0.05,0.05,0.05],
+      "phong_exponent": 1000
+    }
+  ],
+
+  "objects": [
+    {
+      "type": "sphere",
+      "material": "matte gray",
+      "center": [-5,5,-10],
+      "radius": 0.5
+    },
+    {
+      "type": "sphere",
+      "material": "matte gray",
+      "center": [-4,5,-10],
+      "radius": 0.7
+    },
+    {
+      "type": "sphere",
+      "material": "matte gray",
+      "center": [-5,6,-10],
+      "radius": 1
+    },
+    {
+      "type": "sphere",
+      "material": "matte gray",
+      "center": [-6,5,-10],
+      "radius": 0.5
+    },
+    {
+      "type": "sphere",
+      "material": "matte gray",
+      "center": [6,5,-10],
+      "radius": 0.5
+    },
+    {
+      "type": "sphere",
+      "material": "matte gray",
+      "center": [5,5,-10],
+      "radius": 0.7
+    },
+    {
+      "type": "sphere",
+      "material": "matte gray",
+      "center": [6,6,-10],
+      "radius": 1
+    },
+    {
+      "type": "sphere",
+      "material": "matte gray",
+      "center": [7,5,-10],
+      "radius": 0.7
+    },
+    {
+      "type": "sphere",
+      "material": "matte gray",
+      "center": [7,5,-10],
+      "radius": 0.7
+    },
+    {
+      "type": "sphere",
+      "material": "dark green metal",
+      "center": [-4,0,0],
+      "radius": 1.5
+    },
+    {
+      "type": "sphere",
+      "material": "dark green metal",
+      "center": [-3,-1,-5],
+      "radius": 0.3
+    },
+    {
+      "type": "sphere",
+      "material": "dark green metal",
+      "center": [-3,-1,-6],
+      "radius": 0.5
+    },
+    {
+      "type": "sphere",
+      "material": "dark green metal",
+      "center": [5,-1,-6],
+      "radius": 0.5
+    },
+    {
+      "type": "sphere",
+      "material": "dark green metal",
+      "center": [4,-1,-6],
+      "radius": 0.6
+    },
+    {
+      "type": "sphere",
+      "material": "dark green metal",
+      "center": [4.5,0,-6],
+      "radius": 0.7
+    },
+    {
+      "type": "plane",
+      "material": "blue metal",
+      "point": [0,0,-25],
+      "normal": [0,0,1]
+    },
+    {
+      "type": "soup",
+      "material": "matte gray",
+      "stl": "bunny.stl"
+    },
+    {
+      "material": "green grass",
+      "type": "plane",
+      "point": [0,-1,0],
+      "normal": [0,1,0]
+    }
+  ]
+}
+
