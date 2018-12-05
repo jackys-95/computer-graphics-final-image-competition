@@ -12,16 +12,19 @@ The second component scene is an imagining of post-production adding backgrounds
 Requires C++ and CMake.
 * Clone repository.
 * Inside repository folder, use the following commands:
->mkdir build-release
->cd build-release
->cmake ../ -DCMAKE_BUILD_TYPE=Release
->make
-* To generate untextured_seattle.ppm, use the following command inside build-release.
->./raytracing
-* To generate textured_seattle.ppm, use the following command inside build-release.
->./raytracing texture
+> mkdir build-release
 
-Note that untextured_seattle.ppm will take a long amount of time to render. On an i5-6600K (4.5 GHz), this took about 57 minutes to render. On the other hand, textured_seattle.ppm will take about 6-7 minutes to render.
+> cd build-release
+
+> cmake ../ -DCMAKE_BUILD_TYPE=Release
+
+> make
+* To generate untextured_seattle.ppm, use the following command inside build-release.
+> ./raytracing
+* To generate textured_seattle.ppm, use the following command inside build-release.
+> ./raytracing texture
+
+Note that untextured_seattle.ppm will take a long amount of time to render. On an i5-6600K (4.5 GHz) running Ubuntu 18.04.1, this took about 57 minutes to render. On the other hand, textured_seattle.ppm will take about 6-7 minutes to render.
 
 ## Assets
 ### Models
